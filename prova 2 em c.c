@@ -8,35 +8,35 @@ int main(){
 	float nota, manota, menota = 10, totalnota;
 	int faltas, totaldias, totalaluno, a;
 	
-	printf("digite a quantidade de dias\n");
+	printf("Digite a quantidade de dias\n");
 	scanf("%d", &totaldias);
 	
 	
 	while(nota != -1){
-		printf("digite nota e numero de faltas do aluno ");
+		printf("Digite nota e numero de faltas do aluno ");
 		scanf("%f %d",&nota, &faltas);
 		
 		     if( nota >= 0 && nota < 5){
-	    printf("aluno:INS\n");
+	    printf("Aluno:INS\n");
 	}
 		
 	    else if(nota >= 5 && nota < 7){
-	    printf("aluno:REG\n");
+	    printf("Aluno:REG\n");
 	}
 		
 	    else if(nota >= 7 && nota < 9){
-	    printf("aluno:BOM\n");
+	    printf("Aluno:BOM\n");
 	}
 		
 	    else if(nota >= 9 && nota <= 10){
-	    printf("aluno:EXC\n");
+	    printf("Aluno:EXC\n");
 	}
 	    	
 	    else if( nota > 10 || nota < 0)
-	    printf("nota incorreta\n");
+	    printf("Nota incorreta\n");
 	    
 		if(faltas > totaldias*0.75) 
-		printf("reprovado por SFR\n");
+		printf("Reprovado por SFR\n");
 	    
 		totalaluno++;
 		totalnota += nota;
@@ -72,11 +72,11 @@ int main(){
 				
 				
 		  }*/
-	printf("\b\b\bmaior nota:%.2f\n",manota);
-	printf("menor nota:%.2f\n",menota);
-	printf("total de alunos: %i\n", totalaluno);
-	printf("soma das notas: %.2f\n",totalnota);
-	printf("media: %.2f ",totalnota/totalaluno);
+	printf("\b\b\bMaior nota:%.2f\n",manota);
+	printf("Menor nota:%.2f\n",menota);
+	printf("Total de alunos: %i\n", totalaluno);
+	printf("Soma das notas: %.2f\n",totalnota);
+	printf("Media: %.2f ",totalnota/totalaluno);
 		
 	getch();
 	return 0;
